@@ -1,16 +1,17 @@
 # Information Gathering
-> Tên tài liệu:...
 > Mục tiêu: dyson.com
+> 
 > Thực hiện: Trần Tiến Đức
+> 
 > Cập nhật lần cuối: 28/07/2025
 
 # Mục lục
-[Information Gathering](#information-gathering)
-[Gathering Information Using Whois Lookup](#gathering-information-using-whois-lookup)
-[Discovering Websites On The Same Server](#discovering-websites-on-the-same-server)
-[Discovering Subdomains](#discovering-subdomains)
-[Discovering Sensitive Files](#discovering-sensitive-files)
-[Google Hacking](#google-hacking)
+- [Information Gathering](#information-gathering)
+- [Gathering Information Using Whois Lookup](#gathering-information-using-whois-lookup)
+- [Discovering Websites On The Same Server](#discovering-websites-on-the-same-server)
+- [Discovering Subdomains](#discovering-subdomains)
+- [Discovering Sensitive Files](#discovering-sensitive-files)
+- [Google Hacking](#google-hacking)
 
 
 
@@ -192,7 +193,7 @@ plugins                 [Status: 403, Size: 374, Words: 13, Lines: 11, Duration:
 cache                   [Status: 403, Size: 372, Words: 13, Lines: 11, Duration: 107ms]
 cgi-bin                 [Status: 403, Size: 378, Words: 13, Lines: 11, Duration: 104ms]
 wp-content              [Status: 403, Size: 381, Words: 13, Lines: 11, Duration: 93ms]
-reply                   [Status: 403, Size: 372, Words: 13, Lines: 11, Duration: 94ms]                   [Status: 403, Size: 371, Words: 13, Lines: 11, Duration: 
+reply                   [Status: 403, Size: 372, Words: 13, Lines: 11, Duration: 94ms] 
 ```
 
 Kết quả trả về toàn 403, khả năng là do `dyson.com` có cơ chế chặn các tool fuzzing.
