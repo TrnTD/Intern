@@ -3,7 +3,7 @@
 > 
 > Thực hiện: Trần Tiến Đức
 > 
-> Cập nhật lần cuối: 28/07/2025
+> Cập nhật lần cuối: 29/07/2025
 
 # Mục lục
 - [Information Gathering](#information-gathering)
