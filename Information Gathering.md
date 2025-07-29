@@ -207,6 +207,7 @@ Nó không còn trả về 403 nữa nhưng lại không in ra bất cứ kết 
 Có một tool có thể giúp tạo ra request giống với một browser nhất là **`burp suite`**. Ta sẽ sử dụng `Intruder` để fuzz thay cho các tool kia.
 ![alt text](image-5.png)
 ![alt text](image-4.png)
+![alt text](image-10.png)
 
 ## Google Hacking
 `Google Hacking` hay còn gọi là `Google Dorking` là kỹ thuật sử dụng các truy vấn tìm kiếm nâng cao (Google Dorks) trên công cụ tìm kiếm Google để tìm kiếm thông tin nhạy cảm hoặc các lỗ hổng bảo mật trên các trang web, máy chủ, hoặc hệ thống trực tuyến.
