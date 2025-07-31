@@ -1,7 +1,8 @@
 # Information Gathering
-> Tên tài liệu:...
 > Mục tiêu: dyson.com
+> 
 > Thực hiện: Trần Tiến Đức
+> 
 > Cập nhật lần cuối: 28/07/2025
 
 # Mục lục
