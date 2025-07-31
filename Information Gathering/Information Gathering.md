@@ -6,12 +6,12 @@
 > Cập nhật lần cuối: 31/07/2025
 
 # Mục lục
-[Information Gathering](#information-gathering)
-[Gathering Information Using Whois Lookup](#gathering-information-using-whois-lookup)
-[Discovering Websites On The Same Server](#discovering-websites-on-the-same-server)
-[Discovering Subdomains](#discovering-subdomains)
-[Discovering Sensitive Files](#discovering-sensitive-files)
-[Google Hacking](#google-hacking)
+- [Information Gathering](#information-gathering)
+- [Gathering Information Using Whois Lookup](#gathering-information-using-whois-lookup)
+- [Discovering Websites On The Same Server](#discovering-websites-on-the-same-server)
+- [Discovering Subdomains](#discovering-subdomains)
+- [Discovering Sensitive Files](#discovering-sensitive-files)
+- [Google Hacking](#google-hacking)
 
 
 
