@@ -75,6 +75,56 @@ Dựa vào thông tin về công nghệ mà `dyson` sử dụng mà ta đã thu 
 <img width="1440" height="746" alt="image" src="https://github.com/user-attachments/assets/42dcc56e-4f63-45e3-9adc-ff666f6f6a29" />
 
 
+## Port Scanning
+`Port Scanning` là kỹ thuật để phát hiện port nào đang mở ở trên website hoặc máy chủ
+
+Ở đây ta sẽ dùng **`rustscan`** mang lại hiệu suất nhanh hơn **`nmap`**
+```bash
+┌──(trntd㉿kali)-[~/Documents/tools/dirsearch]
+└─$ rustscan -a dyson.com                         
+.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+| {}  }| { } |{ {__ {_   _}{ {__  /  ___} / {} \ |  `| |
+| .-. \| {_} |.-._} } | |  .-._} }\     }/  /\  \| |\  |
+`-' `-'`-----'`----'  `-'  `----'  `---' `-'  `-'`-' `-'
+The Modern Day Port Scanner.
+________________________________________
+: http://discord.skerritt.blog         :
+: https://github.com/RustScan/RustScan :
+ --------------------------------------
+RustScan: allowing you to send UDP packets into the void 1200x faster than NMAP
+
+[~] The config file is expected to be at "/home/trntd/.rustscan.toml"
+[!] File limit is lower than default batch size. Consider upping with --ulimit. May cause harm to sensitive servers
+[!] Your file limit is very small, which negatively impacts RustScan's speed. Use the Docker image, or up the Ulimit with '--ulimit 5000'. 
+Open 52.59.122.122:80
+Open 52.59.122.122:443
+[~] Starting Script(s)
+[~] Starting Nmap 7.95 ( https://nmap.org ) at 2025-08-02 05:54 EDT
+Initiating Ping Scan at 05:54
+Scanning 52.59.122.122 [4 ports]
+Completed Ping Scan at 05:54, 0.02s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 05:54
+Completed Parallel DNS resolution of 1 host. at 05:54, 0.04s elapsed
+DNS resolution of 1 IPs took 0.04s. Mode: Async [#: 2, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]
+Initiating SYN Stealth Scan at 05:54
+Scanning ec2-52-59-122-122.eu-central-1.compute.amazonaws.com (52.59.122.122) [2 ports]
+Discovered open port 443/tcp on 52.59.122.122
+Discovered open port 80/tcp on 52.59.122.122
+Completed SYN Stealth Scan at 05:54, 0.23s elapsed (2 total ports)
+Nmap scan report for ec2-52-59-122-122.eu-central-1.compute.amazonaws.com (52.59.122.122)
+Host is up, received reset ttl 255 (0.050s latency).
+Scanned at 2025-08-02 05:54:19 EDT for 0s
+
+PORT    STATE SERVICE REASON
+80/tcp  open  http    syn-ack ttl 64
+443/tcp open  https   syn-ack ttl 64
+
+Read data files from: /usr/share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
+           Raw packets sent: 6 (240B) | Rcvd: 4 (172B)
+```
+Nó chỉ mở 2 port cho `HTTP` và `HTTPS`, cũng không bất ngờ lắm, nó mà mở port khác như 22 là tới công chuyện liền 🤣
+
 ## Gathering Information Using Whois Lookup
 
 Ở đây ta sẽ sử dụng công cụ **`whois`** ở **who.is**
@@ -280,6 +330,7 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
 
 
 
