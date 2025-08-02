@@ -13,6 +13,48 @@
 - [Discovering Sensitive Files](#discovering-sensitive-files)
 - [Google Hacking](#google-hacking)
 
+# Scope Based Recon
+Phương pháp `Scope Based Recon` chia quy trình recon dựa trên phạm vi, giúp tiết kiệm thời gian, biết chính xác những gì cần tìm kiếm, dễ dàng tự động hóa quy trình.
+
+Dựa vào phương pháp này, ta sẽ chia thành 3 phạm vi:
+- Small Based Recon
+- Medium Based Recon
+- Large Based Recon
+
+Ta sẽ đi vào lần lượt từng scope đối với mục tiêu là `dyson.com`
+
+# Small Based Recon
+## Technology Fingerprinting
+`Technology Fingerprinting` là kỹ thuật xác định công nghệ mà một website hoặc ứng dụng web đang sử dụng, như: CMS, framework, server, ngôn ngữ lập trình, thư viện JS, font,...
+
+Ở đây ta sẽ sử dụng **`Wappalyzer`**
+
+<img width="597" height="962" alt="image" src="https://github.com/user-attachments/assets/69d723c5-a096-481f-a6f1-854fe948ba9e" />
+
+Thu về được khá nhiều thông tin về công nghệ mà `dyson` đang sử dụng, có thể tóm tắt nó như sau:
+
+|Technology Category			|Detected Technology
+|---------------------------------------|------------------------
+| Ecommerce | Cart Functionality, Amazon Webstore
+| CMS | Adobe Experience Manager
+| Webmail | Microsoft 365, Apple iCloud Mail
+| Programming languages | Java, PHP
+| UI Frameworks | Bootstrap
+| Web servers | Apache HTTP Server, Microsoft HTTPAPI (2.0)
+| Payment proccessors | Affirm (2), Afterpay (1.32.11)
+| PaaS | Amazon Web Services
+| JavaScript Frameworks | Handlebars
+| Security | HSTS, Akamai Bot Manager, Riskified
+| SSL/TLS certificate authorities | DigiCert
+| RUM | New Relic, Akamai mPulse, Boomerang
+| Performance | Queue-it (2.0.52), Priority Hints, Lozad.js
+| JavaScript libraries | jQuery (3.6.0), core-js (2.6.12), Lozad.js, Boomerang, Slick (1.9.0)
+| Cookie compliance | OneTrust
+| CDN | Akamai, jsDelivr, Amazon S3, Cloudflare, cdnjs, jQuery CDN
+| ... | ...
+
+
+
 
 
 ## Gathering Information Using Whois Lookup
@@ -220,3 +262,4 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
