@@ -125,6 +125,27 @@ Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
 ```
 Nó chỉ mở 2 port cho `HTTP` và `HTTPS`, cũng không bất ngờ lắm, nó mà mở port khác như 22 là tới công chuyện liền 🤣
 
+## JS Recon
+...
+
+
+## Google Dorking & GitHub Dorking
+`Google Dorking` và `GitHub Dorking` đều là kỹ thuật truy vấn nâng cao giúp tìm kiếm thông tin nhạy cảm hoặc hữu ích từ các nguồn công khai (Google hoặc GitHub)
+
+Về `Goole Dorking`, ta có thể sử dụng **`Fast-Google-Dorks-Scan`**
+<img width="755" height="845" alt="image" src="https://github.com/user-attachments/assets/b8c0164d-db03-4e05-9027-f531b2a8fe82" />
+<img width="755" height="842" alt="image" src="https://github.com/user-attachments/assets/e90223b9-4375-4e68-8f2c-afeab53ddeb9" />
+
+Còn về `GitHub Dorking` ta có thể sử dụng **`GitDorker`**
+
+`python GitDorker.py -tf github_API.txt -q dyson.com -d Dorks/medium_dorks.txt -o dyson`
+<img width="1290" height="475" alt="image" src="https://github.com/user-attachments/assets/361c8594-8cfa-497d-841f-0e105f81baf5" />
+Sau khi chạy xong nó sẽ lưu kết quả vào file CSV
+<img width="1353" height="731" alt="image" src="https://github.com/user-attachments/assets/0d2bb83a-2086-4868-ad9b-018bda41edd1" />
+<img width="1354" height="134" alt="image" src="https://github.com/user-attachments/assets/08f995db-34cf-472a-b8c4-6a8b0fcf9c43" />
+
+
+
 ## Gathering Information Using Whois Lookup
 
 Ở đây ta sẽ sử dụng công cụ **`whois`** ở **who.is**
@@ -330,6 +351,7 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
 
 
 
