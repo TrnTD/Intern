@@ -58,7 +58,21 @@ Thu về được khá nhiều thông tin về công nghệ mà `dyson` đang s�
 
 Có khá nhiều tool giúp chúng ta chuyện này nhưng trong bài này ta sẽ chỉ tập trung vào sử dụng là **`ffuf`** và **`dirsearch`**
 
-Dựa vào thông tin về công nghệ mà `dyson` sử dụng mà ta đã thu thập ở trước, ta biết được rằng website sử dụng `Akamai` 
+Dựa vào thông tin về công nghệ mà `dyson` sử dụng mà ta đã thu thập ở trước, ta biết được rằng website sử dụng `Akamai` đây là hệ thống phát hiện chặn bot. Nếu sử dụng **`ffuf`** cũng như **`dirsearch`** mà không giả lập giống như một browser kỹ càng thì rất dễ bị `403 Forbidden`
+
+Để làm được như vậy, ta cần cũng cấp cho nó những header giống với browser khi gửi request. Đầu tiên bắt request bằng **`burp suite`**, sau đó lấy header bỏ vào tool chạy
+
+<img width="1502" height="825" alt="image" src="https://github.com/user-attachments/assets/45f5b4e4-0e31-477f-9739-8a5e9e52661e" />
+
+Đối với **`ffuf`**, ta dùng `-H` để đính kèm header khi chạy, dùng thêm `-rate` để giới hạn tốc độ gửi, tránh bị chặn khi gửi quá nhiều req/s
+<img width="1580" height="463" alt="image" src="https://github.com/user-attachments/assets/d46181a9-fd68-4546-8dae-7cebec1739aa" />
+<img width="727" height="706" alt="image" src="https://github.com/user-attachments/assets/ccddc182-1031-4b57-a414-ae65e662b30e" />
+<img width="903" height="461" alt="image" src="https://github.com/user-attachments/assets/6a61ccbc-c0c8-474d-9b70-ff0c24de73ef" />
+
+Đối với **`dirsearch`** có option `--headers-file` sẽ tiện hơn trong việc thay đổi header, cũng như gặp các status code 30x cũng sẽ hiện rõ là sẽ redirect tới đâu, khá là tiện
+
+<img width="793" height="733" alt="image" src="https://github.com/user-attachments/assets/90ec314c-78df-469a-969c-3dbe45512d63" />
+<img width="1440" height="746" alt="image" src="https://github.com/user-attachments/assets/42dcc56e-4f63-45e3-9adc-ff666f6f6a29" />
 
 
 ## Gathering Information Using Whois Lookup
@@ -266,5 +280,6 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
 
 
