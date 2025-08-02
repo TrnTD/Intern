@@ -3,7 +3,7 @@
 > 
 > Thực hiện: Trần Tiến Đức
 > 
-> Cập nhật lần cuối: 31/07/2025
+> Cập nhật lần cuối: 02/07/2025
 
 # Mục lục
 - [Information Gathering](#information-gathering)
@@ -53,8 +53,12 @@ Thu về được khá nhiều thông tin về công nghệ mà `dyson` đang s�
 | CDN | Akamai, jsDelivr, Amazon S3, Cloudflare, cdnjs, jQuery CDN
 | ... | ...
 
+## Directory Enumeration
+`Directory Enumeration` là kỹ thuật dùng để tìm ra các directory hoặc file ẩn trên website hoặc máy chủ
 
+Có khá nhiều tool giúp chúng ta chuyện này nhưng trong bài này ta sẽ chỉ tập trung vào sử dụng là **`ffuf`** và **`dirsearch`**
 
+Dựa vào thông tin về công nghệ mà `dyson` sử dụng mà ta đã thu thập ở trước, ta biết được rằng website sử dụng `Akamai` 
 
 
 ## Gathering Information Using Whois Lookup
@@ -262,4 +266,5 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
 
