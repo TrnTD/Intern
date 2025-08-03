@@ -144,6 +144,14 @@ Sau khi chạy xong nó sẽ lưu kết quả vào file CSV
 <img width="1353" height="731" alt="image" src="https://github.com/user-attachments/assets/0d2bb83a-2086-4868-ad9b-018bda41edd1" />
 <img width="1354" height="134" alt="image" src="https://github.com/user-attachments/assets/08f995db-34cf-472a-b8c4-6a8b0fcf9c43" />
 
+# Medium Based Recon
+## Subdomain Enumeration
+Ở đây ta sẽ sử dụng 2 tool là **`assetfinder`** và **`subfinder`**
+
+`assetfinder --subs-only dyson.com > sub_assetfinder.txt`
+
+`subfinder -d dyson.com -v > sub_finder.txt`
+
 
 
 ## Gathering Information Using Whois Lookup
@@ -351,6 +359,7 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
 
 
 
