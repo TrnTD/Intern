@@ -6,12 +6,19 @@
 > Cập nhật lần cuối: 03/07/2025
 
 # Mục lục
-- [Information Gathering](#information-gathering)
-- [Gathering Information Using Whois Lookup](#gathering-information-using-whois-lookup)
-- [Discovering Websites On The Same Server](#discovering-websites-on-the-same-server)
-- [Discovering Subdomains](#discovering-subdomains)
-- [Discovering Sensitive Files](#discovering-sensitive-files)
-- [Google Hacking](#google-hacking)
+- [Scope Based Recon](#scope-based-recon)
+- [Small Based Recon](#small-based-recon)
+  - [Technology Fingerprinting](#technology-fingerprinting)
+  - [Directory Enumeration](#directory-enumeration)
+  - [Port Scanning](#port-scanning)
+  - [JS Recon](#js-recon)
+  - [Google Dorking & GitHub Dorking](#google-dorking--github-dorking)
+- [Medium Based Recon](#medium-based-recon)
+  - [Subdomain Enumeration](#subdomain-enumeration)
+  - [Template Based Scanning](#template-based-scanning)
+- [Large Scope Recon](#large-scope-recon)
+  - [Gathering Information Using Whois Lookup](#gathering-information-using-whois-lookup)
+  - [Discovering Websites On The Same Server](#discovering-websites-on-the-same-server)
 
 # Scope Based Recon
 Phương pháp `Scope Based Recon` chia quy trình recon dựa trên phạm vi, giúp tiết kiệm thời gian, biết chính xác những gì cần tìm kiếm, dễ dàng tự động hóa quy trình.
@@ -278,4 +285,5 @@ dysonmalmesbury.co.uk
 dysonoffice.com	
 dysonoutlet.co.uk	
 ...
+
 
