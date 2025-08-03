@@ -208,8 +208,9 @@ Có hơn 600 kết quả trả về
 [ssl-dns-names] [ssl] [info] www.dyson.com:443 ["www.dysonindie.com","www.mimosatrust.com","stylingtour.dyson.at","www.dysonmalmesbury.co.uk","www.sa.dyson.com","forbusiness.dyson.com.sg","shop.dyson.cn","shop.dyson.co.th","shop.dyson.de","test-shop.dyson.com.au","www.dyson.cn","www.dyson.es","www.dyson.nl","www.dyson.com","oldmedia.dyson.com","reviews.dyson.com","www.dyson.dk","beta.dyson.com.au","shop.dyson.no","shop.dyson.tw","stage.dyson.com.au","www.dyson.ch","www.dyson.co.nz","www.dyson.my","service.dyson.com","support.dyson.pl","www.jamesanddeirdredysontrust.com","acpsirextsit.dyson.hk","pdev.dyson.hk","support.dyson.com.sg","www.dysonrecall.com","www.starandstormfoundation.com","acpsirextdev.dyson.hk","shop.dyson.at","shop.dyson.dk","shop.dyson.es","shop.dyson.hk","shop.dyson.pl","staging.dyson.co.nz","staging.shop.dyson.co.th","troubleshooting.dyson.com","www.dyson.ae","shop.fi.dyson.com","www.dyson.be","www.dyson.com.ee","www.dyson.com.sg","www.dyson.hk","www.dyson.lt","www.dyson.se","www.dysonbrandcentre.com","psit.dyson.hk","shop.dyson.ae","shop.dyson.my","staging.shop.dyson.my","tandcs.dyson.com","www.dyson.at","www.dyson.co.il","www.fi.dyson.com","forbusiness.dyson.pl","m2admin.dyson.com.au","media.dyson.com","shop.dyson.com.sg","shop.dyson.nl","www.dyson.com.au","www.dyson.com.kh","p.dyson.hk","shop.dyson.be","shop.dyson.co.il","support.dyson.com.au","upgrade.dyson.cn","www.dyson.co.jp","www.dyson.de","www.dyson.it","feedback.dyson.com","rework.dysonrecall.com","shop.dyson.co.nz","support.dyson.co.th","support.dyson.hk","www.bluesurftrust.com","www.careers.dyson.com","www.dyson.fr","admin.dyson.com.au","shop.dyson.ch","shop.dyson.com.au","shop.dyson.it","shop.dyson.se","stage.m2admin.dyson.com.au","www.dyson.co.th","www.dyson.ee","acpsirext.dyson.hk","shop.dyson.fr","www.dyson.ma","www.dysoncanada.ca"]                                          
 [INF] Scan completed in 2m. 19 matches found.
 ```
+Có thể thấy `dyson` thiếu nhiều cơ chế bảo mật cơ bản như `content-security-policy`, `strict-transport-security`, `x-content-type-options`, `referrer-policy`,...
 
-
+# Large Scope Recon
 ## Gathering Information Using Whois Lookup
 
 Ở đây ta sẽ sử dụng công cụ **`whois`** ở **who.is**
@@ -415,6 +416,7 @@ Tiếp theo là **`filetype`**, ta có thể tìm kiếm các tệp có định 
 ![alt text](image-9.png)
 
 Còn nhiều các toán tử tìm kiếm nâng cao khác, có thể tham khảo thêm [ở đây](https://www.imperva.com/learn/application-security/google-dorking-hacking/)
+
 
 
 
