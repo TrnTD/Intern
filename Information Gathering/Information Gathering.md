@@ -3,7 +3,7 @@
 > 
 > Thực hiện: Trần Tiến Đức
 > 
-> Cập nhật lần cuối: 02/07/2025
+> Cập nhật lần cuối: 03/07/2025
 
 # Mục lục
 - [Information Gathering](#information-gathering)
@@ -278,3 +278,4 @@ dysonmalmesbury.co.uk
 dysonoffice.com	
 dysonoutlet.co.uk	
 ...
+
