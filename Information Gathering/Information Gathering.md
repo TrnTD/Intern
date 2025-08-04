@@ -160,7 +160,26 @@ Thu được các endpoint của file js sau:
 - `/libs/dam/components/scene7/common/clientlibs/i18n.min.729cff467445a61264e4f0ffb2261059.js`
 - `/etc.clientlibs/dyson/clientlibs/clientlib-homepage.min.04140b5caf5f0f4968f3a9613a328b8a.js`
 
+Ta tiến hành tải các file này về để thuận tiện cho việc recon và cũng như là tránh `Akamai`
+<img width="1192" height="166" alt="image" src="https://github.com/user-attachments/assets/572e983b-3ff7-43a6-b543-693679859393" />
 
+Đến đây ta có thể sử dụng tiếp **`LinkFinder`** hoặc **`SecretFinder`** để tìm ra các API endpoints, Key/Token, URL ẩn, thông tin config, cấu trúc ứng dụng
+
+`python3 linkfinder.py -i 'js_files/*.js' -o output3.html`
+
+<img width="1682" height="891" alt="image" src="https://github.com/user-attachments/assets/f3d908f3-21c8-4cb9-ae8d-51991d500b71" />
+<img width="1653" height="825" alt="image" src="https://github.com/user-attachments/assets/7cc247ef-3ad8-4671-8fcd-f3a0613c890e" />
+
+Còn đối với **`SecretFinder`**
+<img width="1567" height="890" alt="image" src="https://github.com/user-attachments/assets/701b1992-a2bf-455f-beb0-85a538555905" />
+<img width="1915" height="895" alt="image" src="https://github.com/user-attachments/assets/7db8d0ee-7473-4b41-9455-29dde1d998f7" />
+
+Ngoài ra **`nuclei`** còn có một bộ template `exposures` dùng để scan các lỗ hổng liên quan đến lộ thông tin, tệp nhạy cảm
+
+`files.txt` là các url chứa các endpoint về js
+<img width="1355" height="365" alt="image" src="https://github.com/user-attachments/assets/4e37d413-3ad8-4816-a73b-69e5904d45d5" />
+<img width="1212" height="448" alt="image" src="https://github.com/user-attachments/assets/f4174031-1e2d-4ddb-bef9-1ad58f6cbcf5" />
+Có vẻ như scan không phát hiện bất cứ việc lộ lọt thông tin nhạy cảm nào
 
 ## Google Dorking & GitHub Dorking
 `Google Dorking` và `GitHub Dorking` đều là kỹ thuật truy vấn nâng cao giúp tìm kiếm thông tin nhạy cảm hoặc hữu ích từ các nguồn công khai (Google hoặc GitHub)
@@ -311,6 +330,7 @@ dysonmalmesbury.co.uk
 dysonoffice.com	
 dysonoutlet.co.uk	
 ...
+
 
 
 
