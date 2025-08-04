@@ -133,7 +133,33 @@ Nmap done: 1 IP address (1 host up) scanned in 0.42 seconds
 Nó chỉ mở 2 port cho `HTTP` và `HTTPS`, cũng không bất ngờ lắm, nó mà mở port khác như 22 là tới công chuyện liền 🤣
 
 ## JS Recon
-...
+`JS Recon` là kỹ thuật thu thập thông tin từ các tệp JavaScript được tải từ các trang web, nhằm khai thác những thông tin tiềm ẩn hoặc nhạy cảm mà lập trình viên vô tình để lộ.
+
+Đầu tiên ta sẽ cần thu thập hết tất cả các endpoint js có thể có trên `dyson` bằng **`LinkFinder`**
+
+Để sử dụng được và tránh bị chặn bởi `Akamai`, ta cần phải export file request từ **`burp suite`** dưới định dạng xml `burp.xml`, sau đó đưa vào để nó phân tích, ta sử dụng thêm regex để lấy toàn bộ file có đuôi `.js`
+<img width="1509" height="828" alt="image" src="https://github.com/user-attachments/assets/308e3268-aac4-453c-93a3-6def6dee15f1" />
+
+`python3 linkfinder.py -i burp.xml -b -r '[\w\/\.\-\d]+\.js' -o output_jsfiles2.html`
+<img width="1552" height="895" alt="image" src="https://github.com/user-attachments/assets/1bf4a8f5-eb90-4a79-9428-30a836d69e3a" />
+
+Thu được các endpoint của file js sau:
+- `/etc.clientlibs/dyson/clientlibs/clientlib-vendor.min.d6a18cc25dd320f5da33dc604e3e24b9.js`
+- `/etc.clientlibs/dyson/clientlibs/clientlib-all.min.8716027ae1bf3745d07e05ba20e1a7be.js`
+- `/etc.clientlibs/dyson/clientlibs/clientlib-common.min.77613de9efd9770eeded605584874c90.js`
+- `/etc.clientlibs/dyson/clientlibs/clientlib-newrelic/newrelic-prod.min.4a262a8ef7552ba5ca32c06e58c5a0d3.js`
+- `/etc.clientlibs/dyson/clientlibs/clientlib-head.min.2659e89819c5822f86b7d2a4e21cb481.js`
+- `//assets.adobedtm.com/launch-EN6a77adac33bc4e988bfc30e73ee77a5f.min.js`
+- `/assets/js/bootstrap.min.js`
+- `/etc.clientlibs/dyson/clientlibs/jquery.min.5127896d4b794468acf1aedaafa37991.js`
+- `/libs/dam/components/scene7/common/clientlibs/viewer.min.78cc99cb08222001ca2bdf214cc2727b.js`
+- `/etc.clientlibs/clientlibs/granite/jquery.min.3e24d4d067ac58228b5004abb50344ef.js`
+- `/etc.clientlibs/clientlibs/granite/utils.min.74b04a966fe217eec1330839686e8303.js`
+- `/libs/dam/components/scene7/dynamicmedia/clientlibs/dynamicmedia.min.e2b0f51383fb1e3c8201cf865e03b07b.js`
+- `/etc.clientlibs/dyson/clientlibs/clientlib-dynamic-media.min.bfa5c14c3cb32017b797295de98e4ca3.js`
+- `/libs/dam/components/scene7/common/clientlibs/i18n.min.729cff467445a61264e4f0ffb2261059.js`
+- `/etc.clientlibs/dyson/clientlibs/clientlib-homepage.min.04140b5caf5f0f4968f3a9613a328b8a.js`
+
 
 
 ## Google Dorking & GitHub Dorking
@@ -285,5 +311,6 @@ dysonmalmesbury.co.uk
 dysonoffice.com	
 dysonoutlet.co.uk	
 ...
+
 
 
