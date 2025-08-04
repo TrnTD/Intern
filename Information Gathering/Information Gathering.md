@@ -3,7 +3,7 @@
 > 
 > Thực hiện: Trần Tiến Đức
 > 
-> Cập nhật lần cuối: 03/07/2025
+> Cập nhật lần cuối: 04/07/2025
 
 # Mục lục
 - [Scope Based Recon](#scope-based-recon)
@@ -330,6 +330,7 @@ dysonmalmesbury.co.uk
 dysonoffice.com	
 dysonoutlet.co.uk	
 ...
+
 
 
 
